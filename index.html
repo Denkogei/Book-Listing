@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Listing</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Books Listing</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for books..." />
+                <button>Search</button>
+            </div>
+        </ul>
+    </nav>
+     <!-- Main Container -->
+     <div class="container">
+        <!-- Books List -->
+        <div class="books-list">
+            <div class="book-item"> <!-- Repeat for each book -->
+                <h2 class="book-title">Book Title</h2>
+                <p class="book-author">Author Name</p>
+                <p class="book-description">Description here...</p>
+                <img src="cover.jpg" alt="Book Cover" class="book-cover" />
+            </div>
+            <!-- More book-item divs will be added dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript -->
+</body>
+</html>
