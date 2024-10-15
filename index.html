@@ -12,26 +12,28 @@
             <li><a href="#home">Books Listing</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for books..." />
-                <button>Search</button>
-            </div>
         </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for books..." />
+            <button>Search</button>
+        </div>
     </nav>
-     <!-- Main Container -->
-     <div class="container">
+
+    <!-- Main Container -->
+    <div class="container">
         <!-- Books List -->
         <div class="books-list">
             <div class="book-item"> <!-- Repeat for each book -->
-                <h2 class="book-title">Book Title</h2>
-                <p class="book-author">Author Name</p>
-                <p class="book-description">Description here...</p>
-                <img src="cover.jpg" alt="Book Cover" class="book-cover" />
+                <h2 class="book-title"></h2>
+                <p class="book-isbn"></p>
+                <p class="book-pages"></p>
+                <p class="book-authors"></p>
+                <!-- <img src="cover.jpg" alt="Book Cover" class="book-cover" /> -->
             </div>
             <!-- More book-item divs will be added dynamically -->
         </div>
     </div>
 
-    <script src="script.js"></script> <!-- Link to your JavaScript -->
+    <script src="app.js"></script> <!-- Link to your JavaScript -->
 </body>
 </html>
