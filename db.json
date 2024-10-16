@@ -1,0 +1,968 @@
+{
+"books":[
+    {
+        "id": 1,
+        "title": "Unlocking Android",
+        "isbn": "1933988673",
+        "pageCount": 416,
+        "authors": [
+            "W. Frank Ableson",
+            "Charlie Collins",
+            "Robi Sen"
+        ],
+        "description": "A comprehensive guide to Android development.",
+        "ratings": 4.5,
+        "image": "https://prodimage.images-bn.com/pimages/9781933988672_p0_v1_s1200x630.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Android in Action, Second Edition",
+        "isbn": "1935182722",
+        "pageCount": 592,
+        "authors": [
+            "W. Frank Ableson",
+            "Robi Sen"
+        ],
+        "description": "An in-depth exploration of Android programming.",
+        "ratings": 4.3,
+        "image": "https://m.media-amazon.com/images/I/51bKuyVIZaL._CR0%2C0%2C0%2C130_.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Specification by Example",
+        "isbn": "1617290084",
+        "pageCount": 0,
+        "authors": [
+            "Gojko Adzic"
+        ],
+        "description": "A guide to using examples for software specifications.",
+        "ratings": 4.2,
+        "image": "https://images.manning.com/book/9/3dc65e4-fc4f-452a-a900-20d3798b1200/adzic.png"
+    },
+    {
+        "id": 4,
+        "title": "Flex 3 in Action",
+        "isbn": "1933988746",
+        "pageCount": 576,
+        "authors": [
+            "Tariq Ahmed with Jon Hirschi",
+            "Faisal Abid"
+        ],
+        "description": "Learn to build rich internet applications with Flex.",
+        "ratings": 4.0,
+        "image": "https://m.media-amazon.com/images/I/510kZ9WTLXL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Flex 4 in Action",
+        "isbn": "1935182420",
+        "pageCount": 600,
+        "authors": [
+            "Tariq Ahmed",
+            "Dan Orlando",
+            "John C. Bland II",
+            "Joel Hooks"
+        ],
+        "description": "An essential resource for Flex 4 developers.",
+        "ratings": 4.6,
+        "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781935182429/flex-4-in-action-9781935182429_hr.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Collective Intelligence in Action",
+        "isbn": "1933988312",
+        "pageCount": 425,
+        "authors": [
+            "Satnam Alag"
+        ],
+        "description": "Applying collective intelligence to solve problems.",
+        "ratings": 4.1,
+        "image": "https://m.media-amazon.com/images/I/81lwQqJDIXL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Zend Framework in Action",
+        "isbn": "1933988320",
+        "pageCount": 432,
+        "authors": [
+            "Rob Allen",
+            "Nick Lo",
+            "Steven Brown"
+        ],
+        "description": "Master the Zend Framework for PHP development.",
+        "ratings": 4.4,
+        "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781933988320/zend-framework-in-action-9781933988320_hr.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Flex on Java",
+        "isbn": "1933988797",
+        "pageCount": 265,
+        "authors": [
+            "Bernerd Allmon",
+            "Jeremy Anderson"
+        ],
+        "description": "Build Flex applications using Java backends.",
+        "ratings": 3.9,
+        "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781638354314/flex-on-java-9781638354314_hr.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Griffon in Action",
+        "isbn": "1935182234",
+        "pageCount": 375,
+        "authors": [
+            "Andres Almiray",
+            "Danno Ferrin",
+            "James Shingler"
+        ],
+        "description": "Developing desktop applications with Griffon.",
+        "ratings": 4.0,
+        "image": "https://m.media-amazon.com/images/I/71pFKhSn9rL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 10,
+        "title": "OSGi in Depth",
+        "isbn": "193518217X",
+        "pageCount": 325,
+        "authors": [
+            "Alexandre de Castro Alves"
+        ],
+        "description": "An in-depth look at OSGi and its applications.",
+        "ratings": 4.3,
+        "image": "https://m.media-amazon.com/images/I/61dUHDHb4hL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Flexible Rails",
+        "isbn": "1933988509",
+        "pageCount": 592,
+        "authors": [
+            "Peter Armstrong"
+        ],
+        "description": "A practical guide to Rails for flexibility.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/51tk95xhtfL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Hello! Flex 4",
+        "isbn": "1933988762",
+        "pageCount": 258,
+        "authors": [
+            "Peter Armstrong"
+        ],
+        "description": "An introduction to Flex 4 development.",
+        "ratings": 4.2,
+        "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781638354352/hello-flex-4-9781638354352_hr.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Coffeehouse",
+        "isbn": "1884777384",
+        "pageCount": 316,
+        "authors": [
+            "Levi Asher",
+            "Christian Crumlish"
+        ],
+        "description": "Exploring the intersection of coffee and culture.",
+        "ratings": 4.1,
+        "image": "https://m.media-amazon.com/images/I/A1ppMOSIoXL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Team Foundation Server 2008 in Action",
+        "isbn": "1933988592",
+        "pageCount": 344,
+        "authors": [
+            "Jamil Azher"
+        ],
+        "description": "Managing projects with Team Foundation Server.",
+        "ratings": 4.3,
+        "image": "https://m.media-amazon.com/images/I/612mqFYBr2L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Brownfield Application Development in .NET",
+        "isbn": "1933988711",
+        "pageCount": 550,
+        "authors": [
+            "Kyle Baley",
+            "Donald Belcham"
+        ],
+        "description": "Developing applications in existing .NET environments.",
+        "ratings": 4.0,
+        "image": "https://m.media-amazon.com/images/I/51n6IzH+nyL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 16,
+        "title": "MongoDB in Action",
+        "isbn": "1935182870",
+        "pageCount": 0,
+        "authors": [
+            "Kyle Banker"
+        ],
+        "description": "A practical introduction to MongoDB.",
+        "ratings": 4.4,
+        "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/banker.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Distributed Application Development with PowerBuilder 6.0",
+        "isbn": "1884777686",
+        "pageCount": 504,
+        "authors": [
+            "Michael J. Barlotta"
+        ],
+        "description": "Developing distributed applications using PowerBuilder.",
+        "ratings": 3.8,
+        "image": "https://m.media-amazon.com/images/I/5141FKG61ML._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Jaguar Development with PowerBuilder 7",
+        "isbn": "1884777864",
+        "pageCount": 550,
+        "authors": [
+            "Michael Barlotta"
+        ],
+        "description": "Leveraging Jaguar in PowerBuilder 7 development.",
+        "ratings": 4.0,
+        "image": "https://m.media-amazon.com/images/I/514KnwzF47L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 19,
+        "title": "Taming Jaguar",
+        "isbn": "1884777686",
+        "pageCount": 362,
+        "authors": [
+            "Michael J. Barlotta",
+            "Jason R. Weiss"
+        ],
+        "description": "Effective strategies for Jaguar development.",
+        "ratings": 4.1,
+        "image": "https://m.media-amazon.com/images/I/51RGVoz1E7L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 20,
+        "title": "3D User Interfaces with Java 3D",
+        "isbn": "1884777902",
+        "pageCount": 520,
+        "authors": [
+            "Jon Barrilleaux"
+        ],
+        "description": "Creating 3D user interfaces with Java.",
+        "ratings": 4.2,
+        "image": "https://m.media-amazon.com/images/I/41GBPeXT54L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 21,
+        "title": "Hibernate in Action",
+        "isbn": "193239415X",
+        "pageCount": 400,
+        "authors": [
+            "Christian Bauer",
+            "Gavin King"
+        ],
+        "description": "Mastering Hibernate for Java applications.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/511gelQkuEL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 22,
+        "title": "Hibernate in Action (Chinese Edition)",
+        "isbn": null,
+        "pageCount": 400,
+        "authors": [
+            "Christian Bauer",
+            "Gavin King"
+        ],
+        "description": "Chinese edition of the popular Hibernate guide.",
+        "ratings": 4.4,
+        "image": "https://images.manning.com/360/480/resize/book/7/885f484-c707-4d10-9ca3-27fbbc4a4a27/bauer-cn.png"
+    },
+    {
+        "id": 23,
+        "title": "Java Persistence with Hibernate",
+        "isbn": "1932394885",
+        "pageCount": 880,
+        "authors": [
+            "Christian Bauer",
+            "Gavin King"
+        ],
+        "description": "Deep dive into Java persistence with Hibernate.",
+        "ratings": 4.5,
+        "image": "https://images.manning.com/book/d/2ea186d-c683-4d54-95f9-cca25b6fe49e/bauer2.png"
+    },
+    {
+        "id": 24,
+        "title": "JSTL in Action",
+        "isbn": "1930110529",
+        "pageCount": 480,
+        "authors": [
+            "Shawn Bayern"
+        ],
+        "description": "Utilizing JSTL for Java web applications.",
+        "ratings": 4.3,
+        "image": "https://m.media-amazon.com/images/I/61ZVAqaGLvL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 25,
+        "title": "iBATIS in Action",
+        "isbn": "1932394826",
+        "pageCount": 384,
+        "authors": [
+            "Clinton Begin",
+            "Brandon Goodin",
+            "Larry Meadors"
+        ],
+        "description": "Getting started with iBATIS in Java.",
+        "ratings": 4.4,
+        "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781932394825/ibatis-in-action-9781932394825_hr.jpg"
+    },
+    {
+        "id": 26,
+        "title": "Java: The Complete Reference",
+        "isbn": "1260440230",
+        "pageCount": 1248,
+        "authors": [
+            "Herbert Schildt"
+        ],
+        "description": "A comprehensive guide to the Java programming language, covering core concepts and advanced features.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/61yXSTATHHL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 27,
+        "title": "Java Concurrency in Practice",
+        "isbn": "0321349601",
+        "pageCount": 368,
+        "authors": [
+            "Brian Goetz",
+            "Tim Peierls",
+            "Joshua Bloch",
+            "Joseph Bowbeer",
+            "David Holmes"
+        ],
+        "description": "Comprehensive guide to Java concurrency.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/71ajUjqd3vL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 28,
+        "title": "Effective Java",
+        "isbn": "0134686098",
+        "pageCount": 416,
+        "authors": [
+            "Joshua Bloch"
+        ],
+        "description": "Best practices for Java programming.",
+        "ratings": 4.8,
+        "image": "https://m.media-amazon.com/images/I/7167aaVxs3L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 29,
+        "title": "Clean Code",
+        "isbn": "0136083239",
+        "pageCount": 464,
+        "authors": [
+            "Robert C. Martin"
+        ],
+        "description": "A guide to writing clean, maintainable code.",
+        "ratings": 4.7,
+        "image": "https://m.media-amazon.com/images/I/4138uiy6ghL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 30,
+        "title": "Refactoring: Improving the Design of Existing Code",
+        "isbn": "0201485672",
+        "pageCount": 464,
+        "authors": [
+            "Martin Fowler"
+        ],
+        "description": "Techniques for refactoring code effectively.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/71TGolfP8fL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 31,
+        "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+        "isbn": "0201633612",
+        "pageCount": 395,
+        "authors": [
+            "Erich Gamma",
+            "Richard Helm",
+            "Ralph Johnson",
+            "John Vlissides"
+        ],
+        "description": "Foundational design patterns for software development.",
+        "ratings": 4.8,
+        "image": "https://m.media-amazon.com/images/I/818eEdFC48L.jpg"
+    },
+    {
+        "id": 32,
+        "title": "The Pragmatic Programmer",
+        "isbn": "0135957052",
+        "pageCount": 352,
+        "authors": [
+            "Andrew Hunt",
+            "David Thomas"
+        ],
+        "description": "Practical advice for programmers.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/71f1jieYHNL.jpg"
+    },
+    {
+        "id": 33,
+        "title": "Code Complete",
+        "isbn": "0735619670",
+        "pageCount": 960,
+        "authors": [
+            "Steve McConnell"
+        ],
+        "description": "Comprehensive guide to software construction.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/61GzazUmKyL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 34,
+        "title": "Head First Design Patterns",
+        "isbn": "0596007124",
+        "pageCount": 688,
+        "authors": [
+            "Eric Freeman",
+            "Bert Bates",
+            "Kathy Sierra",
+            "Elisabeth Robson"
+        ],
+        "description": "A brain-friendly guide to design patterns.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/91bobQSPQrL.jpg"
+    },
+    {
+        "id": 35,
+        "title": "You Don’t Know JS: Scope & Closures",
+        "isbn": "9781491904190",
+        "pageCount": 192,
+        "authors": [
+            "Kyle Simpson"
+        ],
+        "description": "Deep understanding of JavaScript scope and closures.",
+        "ratings": 4.7,
+        "image": "https://m.media-amazon.com/images/I/81zWsOMWE4L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 36,
+        "title": "JavaScript: The Good Parts",
+        "isbn": "0596805527",
+        "pageCount": 172,
+        "authors": [
+            "Douglas Crockford"
+        ],
+        "description": "A concise guide to the best features of JavaScript.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/7185IMvz88L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 37,
+        "title": "JavaScript Patterns",
+        "isbn": "0596807791",
+        "pageCount": 240,
+        "authors": [
+            "Stoyan Stefanov"
+        ],
+        "description": "Learn best practices for JavaScript programming.",
+        "ratings": 4.4,
+        "image": "https://m.media-amazon.com/images/I/917iQZBR91L._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 38,
+        "title": "Eloquent JavaScript",
+        "isbn": "1593279507",
+        "pageCount": 472,
+        "authors": [
+            "Marijn Haverbeke"
+        ],
+        "description": "A modern introduction to programming in JavaScript.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/81HqVRRwp3L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 39,
+        "title": "Python Crash Course",
+        "isbn": "1593279280",
+        "pageCount": 560,
+        "authors": [
+            "Eric Matthes"
+        ],
+        "description": "A hands-on introduction to Python programming.",
+        "ratings": 4.7,
+        "image": "https://m.media-amazon.com/images/I/71pys4B4OVL.jpg"
+    },
+    {
+        "id": 40,
+        "title": "Automate the Boring Stuff with Python",
+        "isbn": "1593279922",
+        "pageCount": 592,
+        "authors": [
+            "Al Sweigart"
+        ],
+        "description": "Practical programming for total beginners.",
+        "ratings": 4.8,
+        "image": "https://m.media-amazon.com/images/I/71uEI89mcpL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 41,
+        "title": "Fluent Python",
+        "isbn": "1491946228",
+        "pageCount": 792,
+        "authors": [
+            "Luciano Ramalho"
+        ],
+        "description": "Mastering Python's best features.",
+        "ratings": 4.7,
+        "image": "https://m.media-amazon.com/images/I/91DGHmkQmjL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 42,
+        "title": "Learning Python",
+        "isbn": "1449362518",
+        "pageCount": 1648,
+        "authors": [
+            "Mark Lutz"
+        ],
+        "description": "Comprehensive guide to Python programming.",
+        "ratings": 4.5,
+        "image": "https://i.ebayimg.com/images/g/kP0AAOSws8Jl1Oj~/s-l1200.jpg"
+    },
+    {
+        "id": 43,
+        "title": "Python Cookbook",
+        "isbn": "1449340377",
+        "pageCount": 544,
+        "authors": [
+            "David Beazley",
+            "Brian K. Jones"
+        ],
+        "description": "Solutions to common Python programming tasks.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/91TnJtD9RfL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 44,
+        "title": "Django for Beginners",
+        "isbn": "1593279280",
+        "pageCount": 392,
+        "authors": [
+            "William S. Vincent"
+        ],
+        "description": "Learn web development with Django.",
+        "ratings": 4.5,
+        "image": "https://d2sofvawe08yqg.cloudfront.net/djangoforbeginners/s_hero2x?1720707597"
+    },
+    {
+        "id": 45,
+        "title": "Learning SQL",
+        "isbn": "1491957682",
+        "pageCount": 384,
+        "authors": [
+            "Alan Beaulieu"
+        ],
+        "description": "An introduction to SQL programming.",
+        "ratings": 4.4,
+        "image": "https://m.media-amazon.com/images/I/81xkjj+FAfL._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 46,
+        "title": "SQL in 10 Minutes, Sams Teach Yourself",
+        "isbn": "0672336073",
+        "pageCount": 192,
+        "authors": [
+            "Ben Forta"
+        ],
+        "description": "Quick introduction to SQL.",
+        "ratings": 4.3,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/61dlzr+dbUL._AC_UL600_SR600,600_.jpg"
+    },
+    {
+        "id": 47,
+        "title": "Head First SQL",
+        "isbn": "0596526948",
+        "pageCount": 624,
+        "authors": [
+            "Lynn Beighley"
+        ],
+        "description": "A brain-friendly guide to SQL.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/71sSFiBHNoL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 48,
+        "title": "Ruby on Rails Tutorial",
+        "isbn": "0134598628",
+        "pageCount": 384,
+        "authors": [
+            "Michael Hartl"
+        ],
+        "description": "Learn Rails by building a sample application.",
+        "ratings": 4.7,
+        "image": "https://m.media-amazon.com/images/I/81xarThdxFL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 49,
+        "title": "The Pragmatic Programmer: Your Journey to Mastery",
+        "isbn": "0135957052",
+        "pageCount": 352,
+        "authors": [
+            "Andrew Hunt",
+            "David Thomas"
+        ],
+        "description": "Guidance on becoming a master programmer.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/71f1jieYHNL.jpg"
+    },
+    {
+        "id": 50,
+        "title": "Designing Data-Intensive Applications",
+        "isbn": "1492033418",
+        "pageCount": 600,
+        "authors": [
+            "Martin Kleppmann"
+        ],
+        "description": "Principles and practices for building data-intensive applications.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/91YfNb49PLL._UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 51,
+        "title": "The Art of Electronics",
+        "isbn": "0521809266",
+        "pageCount": 800,
+        "authors": [
+            "Paul Horowitz",
+            "Winfield Hill"
+        ],
+        "description": "A comprehensive guide to electronics.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/81RFSXlQ29L._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 52,
+        "title": "Introduction to Machine Learning",
+        "isbn": "0262035618",
+        "pageCount": 800,
+        "authors": [
+            "Ethem Alpaydin"
+        ],
+        "description": "Fundamentals of machine learning.",
+        "ratings": 4.4,
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1386923543i/213032.jpg"
+    },
+    {
+        "id": 53,
+        "title": "Deep Learning",
+        "isbn": "0262035618",
+        "pageCount": 800,
+        "authors": [
+            "Ian Goodfellow",
+            "Yoshua Bengio",
+            "Aaron Courville"
+        ],
+        "description": "Comprehensive introduction to deep learning.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/61AA6wv7ieL._AC_SY780_.jpg"
+    },
+    {
+        "id": 54,
+        "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+        "isbn": "1492032648",
+        "pageCount": 800,
+        "authors": [
+            "Aurélien Géron"
+        ],
+        "description": "Practical guide to machine learning with Python.",
+        "ratings": 4.7,
+        "image": "https://m.media-amazon.com/images/I/81R5BmGtv-L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 55,
+        "title": "Machine Learning: A Probabilistic Perspective",
+        "isbn": "0262018020",
+        "pageCount": 800,
+        "authors": [
+            "Kevin P. Murphy"
+        ],
+        "description": "A comprehensive guide to probabilistic machine learning.",
+        "ratings": 4.5,
+        "image": "https://cdn.porchlightbooks.com/assets/images/books/9/39/439/8439/9780262048439.jpg?u=638621436671100000&height=400&width=400&mode=max"
+    },
+    {
+        "id": 56,
+        "title": "Artificial Intelligence: A Modern Approach",
+        "isbn": "0134610997",
+        "pageCount": 1132,
+        "authors": [
+            "Stuart Russell",
+            "Peter Norvig"
+        ],
+        "description": "A comprehensive introduction to AI.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/916hLnkjgNL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 57,
+        "title": "Computer Vision: Algorithms and Applications",
+        "isbn": "1466593348",
+        "pageCount": 700,
+        "authors": [
+            "Richard Szeliski"
+        ],
+        "description": "A detailed guide to computer vision techniques.",
+        "ratings": 4.4,
+        "image": "https://m.media-amazon.com/images/I/51qgx0XJAQL._UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 58,
+        "title": "Deep Reinforcement Learning Hands-On",
+        "isbn": "1838822114",
+        "pageCount": 368,
+        "authors": [
+            "Maxim Lapan"
+        ],
+        "description": "Hands-on guide to deep reinforcement learning.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/81tClJcY7PL._UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 59,
+        "title": "Natural Language Processing with Python",
+        "isbn": "0596516495",
+        "pageCount": 504,
+        "authors": [
+            "Steven Bird",
+            "Ewan Klein",
+            "Edward Loper"
+        ],
+        "description": "An introduction to NLP using Python.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/81Z8Ko9zszL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 60,
+        "title": "The Elements of Statistical Learning",
+        "isbn": "9780387848570",
+        "pageCount": 745,
+        "authors": [
+            "Trevor Hastie",
+            "Robert Tibshirani",
+            "Jerome Friedman"
+        ],
+        "description": "An essential guide to statistical learning.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/517TrzchOML.jpg"
+    },
+    {
+        "id": 61,
+        "title": "Pattern Recognition and Machine Learning",
+        "isbn": "0387310738",
+        "pageCount": 738,
+        "authors": [
+            "Christopher Bishop"
+        ],
+        "description": "A comprehensive introduction to pattern recognition.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/71fqxXDY2ZL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 62,
+        "title": "Data Science from Scratch",
+        "isbn": "149204779X",
+        "pageCount": 384,
+        "authors": [
+            "Joel Grus"
+        ],
+        "description": "A practical introduction to data science.",
+        "ratings": 4.4,
+        "image": "https://m.media-amazon.com/images/I/51XwoyG7MrL._AC_SY780_.jpg"
+    },
+    {
+        "id": 63,
+        "title": "Data Science for Business",
+        "isbn": "1492041124",
+        "pageCount": 400,
+        "authors": [
+            "Foster Provost",
+            "Tom Fawcett"
+        ],
+        "description": "Principles and practices of data science.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/81Be4Mvy6ZL._UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 64,
+        "title": "Business Analytics: Data Analysis & Decision Making",
+        "isbn": "1285461746",
+        "pageCount": 576,
+        "authors": [
+            "S. Christian Albright",
+            "Wayne L. Winston"
+        ],
+        "description": "Analyzing data for effective decision-making.",
+        "ratings": 4.4,
+        "image": "https://m.media-amazon.com/images/I/51ZPrjaa-fL._AC_SY780_.jpg"
+    },
+    {
+        "id": 65,
+        "title": "The Data Warehouse Toolkit",
+        "isbn": "1119474505",
+        "pageCount": 720,
+        "authors": [
+            "Ralph Kimball",
+            "Margy Ross"
+        ],
+        "description": "Designing and building data warehouses.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/71T2VkScbcL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 66,
+        "title": "Data Mining: Concepts and Techniques",
+        "isbn": "0123814790",
+        "pageCount": 816,
+        "authors": [
+            "Jiawei Han",
+            "Micheline Kamber",
+            "Jian Pei"
+        ],
+        "description": "A comprehensive guide to data mining techniques.",
+        "ratings": 4.4,
+        "image": "https://m.media-amazon.com/images/I/71Fj5RiexsS._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 67,
+        "title": "Python for Data Analysis",
+        "isbn": "1491957666",
+        "pageCount": 550,
+        "authors": [
+            "Wes McKinney"
+        ],
+        "description": "Data analysis with Python.",
+        "ratings": 4.6,
+        "image": "https://m.media-amazon.com/images/I/8125MPZTgbL._UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 68,
+        "title": "The Art of Data Science",
+        "isbn": "0992001002",
+        "pageCount": 246,
+        "authors": [
+            "Roger D. Peng",
+            "Elizabeth Matsui"
+        ],
+        "description": "A guide to the principles of data science.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/71zoLTSAWNL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 69,
+        "title": "Automate the Boring Stuff with Python",
+        "isbn": "9781593279929",
+        "pageCount": 592,
+        "authors": [
+        "Al Sweigart"
+        ],
+        "description": "A practical guide to programming in Python, focusing on automation of everyday tasks.",
+        "ratings": 4.8,
+        "image": "https://m.media-amazon.com/images/I/71uEI89mcpL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 70,
+        "title": "R for Data Science",
+        "isbn": "1491910399",
+        "pageCount": 608,
+        "authors": [
+            "Hadley Wickham",
+            "Garrett Grolemund"
+        ],
+        "description": "Data science using R programming.",
+        "ratings": 4.7,
+        "image": "https://m.media-amazon.com/images/I/91on5Tt+MVL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 71,
+        "title": "Practical Statistics for Data Scientists",
+        "isbn": "1492072930",
+        "pageCount": 330,
+        "authors": [
+            "Peter Bruce",
+            "Andrew Bruce"
+        ],
+        "description": "Essential statistics for data science.",
+        "ratings": 4.5,
+        "image": "https://m.media-amazon.com/images/I/81Sdk02bg+L.jpg"
+    },
+    {
+        "id": 72,
+        "title": "The Data Science Handbook",
+        "isbn": null,
+        "pageCount": 500,
+        "authors": [
+            "Carl Shan",
+            "William Chen",
+            "Henry Wang",
+            "Max Song"
+        ],
+        "description": "Comprehensive guide to the data science field.",
+        "ratings": 4.4,
+        "image": "https://m.media-amazon.com/images/I/41aishgPCnL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 73,
+        "title": "Flask Web Development",
+        "isbn": "9781491991737",
+        "pageCount": 400,
+        "authors": [
+            "Miguel Grinberg"
+        ],
+        "image": "https://m.media-amazon.com/images/I/91jCDEyM3fL._AC_UF1000,1000_QL80_.jpg",
+        "description": "A hands-on guide to building web applications with Flask.",
+        "ratings": 4.7
+    },
+    {
+        "id": 74,
+        "title": "React Up & Running",
+        "isbn": "9781491931825",
+        "pageCount": 352,
+        "authors": [
+            "Stoyan Stefanov"
+        ],
+        "image": "https://m.media-amazon.com/images/I/91p+riY2nPL._AC_UF1000,1000_QL80_.jpg",
+        "description": "Get up to speed with React for building dynamic web applications.",
+        "ratings": 4.5
+    },
+    {
+        "id": 75,
+        "title": "Flask by Example",
+        "isbn": "9781839215978",
+        "pageCount": 228,
+        "authors": [
+            "Gareth Dwyer"
+        ],
+        "image": "https://m.media-amazon.com/images/I/61pmK4skprL._AC_UF1000,1000_QL80_.jpg",
+        "description": "Learn Flask by creating four different web applications.",
+        "ratings": 4.6
+    },
+    {
+        "id": 76,
+        "title": "Fullstack React",
+        "isbn": "9780991344625",
+        "pageCount": 300,
+        "authors": [
+            "Accomazzo, Murray, and Lerner"
+        ],
+        "image": "https://m.media-amazon.com/images/I/71Yd2ACrDcL._AC_UF1000,1000_QL80_.jpg",
+        "description": "Learn how to build a full-stack React application from scratch.",
+        "ratings": 4.4
+    }
+]
+}
