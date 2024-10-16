@@ -1,50 +1,60 @@
 * {
     margin: 0;
     padding: 0;
+    bottom: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+body{
+    background:midnightblue;
+}
 nav {
     display: flex;
-    justify-content: space-between; /* Space between links and search bar */
+    justify-content: space-between; 
     align-items: center; 
-    background: linear-gradient(45deg, midnightblue, #9c0e9c);
+    
     padding: 20px;
-    height: 60px;
+    height: 20px;
 }
-
-ul {
-    list-style-type: none;
-    display: flex; /* Align items in a row */
-    margin: 0;
-    padding: 0;
+.dark-mode  {
+    background-color: black; /* Dark background */
+    color: white;
 }
-
-ul li {
-    margin-left: 20px;
-}
-
-li a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 20px;
+#themeToggle {
+    top: 10px; 
+    right: 10px; 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    z-index: 1000; 
 }
 
 .search-bar {
+    margin-top: 180px;
     display: flex; 
     align-items: center; 
-    
+    justify-content: center; 
+    flex: 1; 
 }
 
 .search-bar input {
-    padding: 5px;
+    padding: 10px; 
     margin-right: 10px; 
+    width: 400px; 
+    height: 20px; 
+    font-size: 16px; 
+    border: 1px solid #9c0e9c; 
+    border-radius: 10px; 
+    outline: none; 
+}
+
+.search-bar input:focus {
+    border-color: midnightblue; 
 }
 
 .search-bar button {
     padding: 5px 10px;
-    height: 40px;
-    background-color: midnightblue; 
+    height: 40px; 
+    background-color: #9c0e9c; 
     color: whitesmoke; 
     border: none; 
     cursor: pointer; 
@@ -53,27 +63,32 @@ li a {
 }
 
 .search-bar button:hover {
-    background-color: midnightblue; 
+    background-color: #5a5a5a; 
+}
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #9c0e9c; 
+    padding-left: 30px;
 }
 
-.search-bar input {
-    padding: 10px; 
-    width: 250px;
-    height: 30px;
-    font-size: 16px; 
-    border: 1px solid #9c0e9c; 
-    border-radius: 5px; 
-    outline: none; 
-    border-radius: 10px;
+/* Dark Mode Icon Change */
+body.dark-mode #themeToggle i {
+    content: "\f185"; 
 }
 
-.search-bar input:focus {
-    border-color: midnightblue;
+/* Light Mode Icon Change */
+body #themeToggle i {
+    content: "\f186"; /
 }
 .container {
-    max-width: 1200px; 
-    margin: 20px auto;
+    padding-top:0px ;
+    max-width: 1700px; 
+    margin: 30px auto;
     padding: 20px; 
+    
 }
 
 .books-list {
@@ -83,7 +98,7 @@ li a {
 }
 
 .book-item {
-    background-color: #f9f9f9; 
+    background-color: #FFFFFF; 
     border: 1px solid #9c0e9c; 
     border-radius: 10px; 
     padding: 15px; 
@@ -94,11 +109,9 @@ li a {
 
 .book-item:hover {
     transform: scale(1.05); 
-    background-color:#9c0e9c;
+    background-color: (1%, 1%, 0%, 4%);
 }
-.book-item p:hover{
-    color: white;
-}
+
 
 .book-title {
     font-size: 1.5em; 
@@ -106,9 +119,9 @@ li a {
     color: black; 
 }
 
-.book-isbn, .book-pages, .book-authors {
+.book-authors {
     font-size: 1em; 
-    color: #666; 
+    color: black; 
     margin: 5px 0; 
 }
 
@@ -116,4 +129,12 @@ li a {
     width: 100%; 
     height: auto; 
     border-radius: 5px; 
+}
+.book-rating {
+    font-size: 30px; 
+    color: gold; 
+}
+
+.book-rating span {
+    margin-right: 2px; 
 }
