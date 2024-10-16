@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const booksList = document.querySelector('.books-list');
 
     // Fetching data from the API
-    fetch('https://softwium.com/api/books')
+    fetch('http://localhost:3000/books')
         .then(response => {
             if (!response.ok) {
             console.log(response)
@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Add content to the book item
                 bookItem.innerHTML = `
                     <h2 class="book-title">${book.title}</h2>
-                     <p class="book-isbn">${book.isbn}</p>
-                     <p class="book-pages" >${book.pageCount}</p>
                     <p class="book-authors">${book.authors}</p>
-                     <img src="${book.coverImage || 'default.jpg'}" alt="Book Cover" class="book-cover" />
+                    <p class="book-description">${book.description}</p>
+                    <p class="book-rating">${book.ratings}</p>
+                     <img src="${book.image || 'default.jpg'}" alt="Book Cover" class="book-cover" />
                 `;
 
                 // Append the book item to the books list
