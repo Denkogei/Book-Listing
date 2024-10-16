@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/35e5332db3.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script> <!-- Link to your JavaScript -->
     <title>Book Listing</title>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#home">Books Listing</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        
         <div class="search-bar">
-            <input type="text" placeholder="Search for books..." />
-            <button>Search</button>
+            <input  id="searchInput" type="text" placeholder="Search for books..." />
+            <button id="searchButton">Search</button>
+            <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
         </div>
     </nav>
 
     <!-- Main Container -->
     <div class="container">
         <!-- Books List -->
-        <h2 style="text-align: center;padding: 20px;">AVAILABLE BOOKS</h2>
+        <h2 style="text-align: center;padding: 30px;margin:20px; color: white;">AVAILABLE BOOKS</h2> 
         <div class="books-list">
             </div>
+            
             <!-- More book-item divs will be added dynamically -->
         </div>
     </div>
-
-    <script src="app.js"></script> <!-- Link to your JavaScript -->
+   
 </body>
 </html>
