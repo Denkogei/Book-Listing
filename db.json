@@ -963,6 +963,30 @@
         "image": "https://m.media-amazon.com/images/I/71Yd2ACrDcL._AC_UF1000,1000_QL80_.jpg",
         "description": "Learn how to build a full-stack React application from scratch.",
         "ratings": 4.4
+    },
+    {
+        "id": 77,
+        "title": "Angular Up and Running",
+        "isbn": "1491931678",
+        "pageCount": 300,
+        "authors": [
+            "Shyam Seshadri"
+        ],
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/7190T1WJZ8L._AC_UF1000,1000_QL80_.jpg",
+        "description": "A comprehensive guide to getting up and running with Angular."
+    },
+    {
+        "id": 78,
+        "title": "Pro Angular 9",
+        "isbn": "9781484262074",
+        "pageCount": 600,
+        "authors": [
+            "Adam Freeman"
+        ],
+        "rating": 4.8,
+        "image": "https://m.media-amazon.com/images/I/61L0-p+oh0L._AC_UF1000,1000_QL80_.jpg",
+        "description": "An in-depth guide to Angular, covering advanced topics and best practices."
     }
 ]
 }
