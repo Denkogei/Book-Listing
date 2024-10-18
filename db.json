@@ -987,6 +987,126 @@
         "rating": 4.8,
         "image": "https://m.media-amazon.com/images/I/61L0-p+oh0L._AC_UF1000,1000_QL80_.jpg",
         "description": "An in-depth guide to Angular, covering advanced topics and best practices."
+    },
+    {
+        "id": 79,
+        "title": "HTML5 for Web Designers",
+        "isbn": "9781937557043",
+        "pageCount": 100,
+        "authors": ["Jeremy Keith"],
+        "rating": 4.6,
+        "image": "https://freecomputerbooks.com/covers/HTML5-for-Web-Designers.jpg",
+        "description": "A concise introduction to HTML5, focusing on the new elements and features, making it great for those specifically interested in HTML."
+    },
+    {
+        "id": 80,
+        "title": "HTML: A Beginner's Guide",
+        "isbn": "9780071790291",
+        "pageCount": 384,
+        "authors": ["Wendy Willard"],
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/51SYo7wokoL._AC_UF1000,1000_QL80_.jpg",
+        "description": "This book covers the basics of HTML, including structure and elements, suitable for those new to the language."
+    },
+    {
+        "id": 81,
+        "title": "Head First HTML",
+        "isbn": "9780596101978",
+        "pageCount": 600,
+        "authors": ["Elisabeth Robson", "Eric Freeman"],
+        "rating": 4.5,
+        "image": "https://target.scene7.com/is/image/Target/GUEST_3d537de9-a452-4344-8552-12a5a9e4df79",
+        "description": "Focused exclusively on HTML, this book uses engaging visuals and exercises to teach the fundamentals."
+    },
+    {
+        "id": 82,
+        "title": "HTML5 in Action",
+        "isbn": "9781617291646",
+        "pageCount": 400,
+        "authors": ["Alex MacCaw"],
+        "rating": 4.4,
+        "image": "https://m.media-amazon.com/images/I/41e4Y8kSMaL._AC_UF1000,1000_QL80_.jpg",
+        "description": "While it touches on HTML5 features, it provides a clear understanding of HTML on its own, ideal for web developers."
+    },
+    {
+        "id": 83,
+        "title": "HTML Quick Start Guide",
+        "isbn": "9781683921310",
+        "pageCount": 150,
+        "authors": ["Wiliam Fisher"],
+        "rating": 4.3,
+        "image": "https://m.media-amazon.com/images/I/61CdKF7somL._AC_UF1000,1000_QL80_.jpg",
+        "description": "A straightforward guide aimed at beginners, focusing solely on HTML basics and practical applications."
+    },
+    {
+        "id": 84,
+        "title": "CSS: The Definitive Guide",
+        "isbn": "9781449340377",
+        "pageCount": 624,
+        "authors": ["Eric A. Meyer", "Estelle Weyl"],
+        "rating": 4.7,
+        "image": "https://m.media-amazon.com/images/I/81HX7jFq9AL._AC_UF1000,1000_QL80_.jpg",
+        "description": "A comprehensive reference that covers everything from the basics to advanced techniques in CSS."
+    },
+    {
+        "id": 85,
+        "title": "CSS Secrets",
+        "isbn": "9781491941980",
+        "pageCount": 288,
+        "authors": ["Lea Verou"],
+        "rating": 4.8,
+        "image": "https://m.media-amazon.com/images/I/91EGxvygVTL._AC_UF1000,1000_QL80_.jpg",
+        "description": "This book shares practical tips and techniques for solving common CSS challenges, making it great for intermediate developers."
+    },
+    {
+        "id": 86,
+        "title": "The CSS Anthology",
+        "isbn": "9781492051761",
+        "pageCount": 336,
+        "authors": ["Rachael Andrew"],
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/51JjPHglZSL._AC_UF1000,1000_QL80_.jpg",
+        "description": "A beginner-friendly guide that focuses on practical applications and real-world examples."
+    },
+    {
+        "id": 87,
+        "title": "Transcending CSS: The Fine Art of Web Design",
+        "isbn": "9780321615864",
+        "pageCount": 240,
+        "authors": ["Andy Clarke"],
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/61ay7CTKXTL._AC_UF1000,1000_QL80_.jpg",
+        "description": "A book that explores not just the technical aspects but also the creative side of using CSS in web design."
+    },
+    {
+        "id": 88,
+        "title": "CSS in Depth",
+        "isbn": "9781617291479",
+        "pageCount": 384,
+        "authors": ["Keith J. Grant"],
+        "rating": 4.5,
+        "image": "https://images.manning.com/book/1/05a18b1-751e-4bcd-9d61-71757f0d2d54/Grant-CSS-HI.png",
+        "description": "This book goes beyond the basics and delves into more complex CSS techniques, ideal for those looking to deepen their understanding."
+    },
+    {
+        "id": 89,
+        "title": "A Book Apart: CSS3 for Web Designers",
+        "isbn": "9781937557043",
+        "pageCount": 100,
+        "authors": ["Dan Cederholm"],
+        "rating": 4.5,
+        "image": "https://m.media-amazon.com/images/I/51zkrSb9XnL._AC_UF1000,1000_QL80_.jpg",
+        "description": "A concise introduction to CSS3, focusing on new features and how to use them effectively in design."
+    },
+    {
+        "id": 90,
+        "title": "CSS Mastery: Advanced Web Standards Solutions",
+        "isbn": "9781932394880",
+        "pageCount": 304,
+        "authors": ["Andy Budd"],
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/51HNQ5GBbJL._AC_UF894,1000_QL80_.jpg",
+        "description": "A guide that provides advanced techniques and best practices for mastering CSS and creating sophisticated layouts."
     }
 ]
 }
