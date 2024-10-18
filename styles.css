@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     bottom: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Helvetica, Arial, Georgia, Tahoma;
 }
 body{
     background:midnightblue;
@@ -85,15 +85,15 @@ body #themeToggle i {
 }
 .container {
     padding-top:0px ;
-    max-width: 1700px; 
-    margin: 30px auto;
-    padding: 20px; 
+    max-width: 1600px; 
+    margin: 20px auto;
+    padding: 15px; 
     
 }
 
 .books-list {
     display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
     gap: 20px; 
 }
 
@@ -117,12 +117,17 @@ body #themeToggle i {
     font-size: 1.5em; 
     margin-bottom: 10px; 
     color: black; 
+    font-weight: bolder;
+    font-style:normal;
+    font-size: 22px;
 }
 
 .book-authors {
     font-size: 1em; 
     color: black; 
     margin: 5px 0; 
+    font-size: 15px;
+    font-family: fantasy;
 }
 .book-description{
     font-size: 15px; 
@@ -190,4 +195,20 @@ body #themeToggle i {
 .like-container {
     display: flex;
     align-items: center; /* Center items vertically */
+}
+.like-button{
+    padding: 5px 5px;
+    height: 24px; 
+    background-color: #9c0e9c; 
+    color: whitesmoke; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 12px;
+    border-radius: 5px;
+}
+footer {
+    color: white; 
+    padding: 40px 20px; 
+    text-align: center; 
+   
 }
