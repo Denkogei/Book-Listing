@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2 class="book-title">${book.title}</h2>
                 <button class="show-more">Show More</button>
                 <div class="book-details" style="display: none;">
-                    <p class="book-authors">${book.authors.join(', ')}</p>
-                    <p class="book-description">${book.description}</p>
+                    <p class="book-authors">Authors: ${book.authors.join(', ')}</p>
+                    <p class="book-description"> ${book.description}</p>
                     <p class="book-rating">${stars}</p>
                 </div>
                 <button class="like-button">
