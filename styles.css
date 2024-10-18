@@ -124,6 +124,11 @@ body #themeToggle i {
     color: black; 
     margin: 5px 0; 
 }
+.book-description{
+    font-size: 15px; 
+    margin-bottom: 10px; 
+    color: black; 
+}
 
 .book-cover {
     width: 100%; 
@@ -137,4 +142,52 @@ body #themeToggle i {
 
 .book-rating span {
     margin-right: 2px; 
+}
+.show-more {
+    background-color: transparent;
+    border: none;
+    color: blue; /* or your preferred color */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.show-more:hover {
+    text-decoration: none;
+    color: darkblue; /* Change color on hover */
+}
+.book-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.book-cover {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.show-more {
+    background-color: transparent;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.show-more:hover {
+    color: darkblue;
+}
+/* Like count style */
+.like-count {
+    font-size: 1em; /* Font size */
+    color: #666; /* Gray color */
+    margin-left: 10px; /* Space between button and count */
+}
+
+/* Flex container for like button and count */
+.like-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
 }
