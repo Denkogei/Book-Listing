@@ -1107,6 +1107,26 @@
         "rating": 4.6,
         "image": "https://m.media-amazon.com/images/I/51HNQ5GBbJL._AC_UF894,1000_QL80_.jpg",
         "description": "A guide that provides advanced techniques and best practices for mastering CSS and creating sophisticated layouts."
+    },
+    {
+        "id": 91,
+        "title": "The Vue.js Handbook",
+        "isbn": "9781839213497",
+        "pageCount": 100,
+        "authors": ["Flavio Copes"],
+        "rating": 4.8,
+        "image": "https://d2sofvawe08yqg.cloudfront.net/thevuehandbook/s_hero2x?1620570718",
+        "description": "A comprehensive guide to getting started with Vue.js."
+    },
+    {
+        "id": 92,
+        "title": "Vue.js Up and Running",
+        "isbn": "9781491930081",
+        "pageCount": 254,
+        "authors": ["Callum Macrae"],
+        "rating": 4.6,
+        "image": "https://m.media-amazon.com/images/I/91leSpWmFVL.jpg",
+        "description": "A practical guide to building web applications using Vue.js."
     }
 ]
 }
