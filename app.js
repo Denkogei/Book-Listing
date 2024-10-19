@@ -28,8 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const bookItem = document.createElement('div');
             bookItem.classList.add('book-item');
 
-            const rating = Math.floor(book.rating) || 0;
-            const stars = generateStars(rating); 
+            // Load likes from local storage or use the default value
+            const storedLikes = localStorage.getItem(`likes_${book.id}`);
+            book.likes = storedLikes ? parseInt(storedLikes) : (book.likes || 0);
 
             // Add content to the book item
             bookItem.innerHTML = `
@@ -38,18 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="show-more">Show More</button>
                 <div class="book-details" style="display: none;">
                     <p class="book-authors">Authors: ${book.authors.join(', ')}</p>
-                    <p class="book-description"> About Book:  ${book.description}</p>
-                    <p class="book-rating">${stars}</p>
+                    <p class="book-description">About Book: ${book.description}</p>
                 </div>
                 <button class="like-button">
                     <i class="fa-solid fa-heart"></i> Like
                 </button>
-                <span class="like-count">${book.likes || 0} Likes</span>
+                <span class="like-count">${book.likes} Likes</span>
             `;
 
             // Append the book item to the books list
             booksList.appendChild(bookItem);
-
+            
             // Add event listener for the "Show More" button
             const button = bookItem.querySelector('.show-more');
             button.addEventListener('click', () => {
@@ -66,18 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Like Button Functionality
             const likeButton = bookItem.querySelector('.like-button');
             likeButton.addEventListener('click', () => {
-                book.likes = (book.likes || 0) + 1; // Increase the like count
+                book.likes += 1; // Increase the like count
                 bookItem.querySelector('.like-count').innerText = `${book.likes} Likes`; // Update the display
+                
+                // Save the likes in local storage
+                localStorage.setItem(`likes_${book.id}`, book.likes);
             });
         });
-    }
-
-    function generateStars(rating) {
-        let stars = '';
-        for (let i = 1; i <= 5; i++) {
-            stars += (i <= rating) ? '★' : '☆'; 
-        }
-        return stars;
     }
 
     searchButton.addEventListener('click', () => {
