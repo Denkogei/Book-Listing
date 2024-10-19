@@ -50,6 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
             // Append the book item to the books list
             booksList.appendChild(bookItem);
             
+
+             // Add event listener for hover effects
+             bookItem.addEventListener('mouseover', () => {
+                bookItem.style.backgroundColor = '#ffffff'; // Highlight on hover
+                bookItem.p.style.color = 'white';
+            });
+
+            bookItem.addEventListener('mouseout', () => {
+                bookItem.style.backgroundColor = ''; // Remove highlight
+            });
+
+            
             // Add event listener for the "Show More" button
             const button = bookItem.querySelector('.show-more');
             button.addEventListener('click', () => {
