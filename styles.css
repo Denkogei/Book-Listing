@@ -1,32 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent box sizing */
+    bottom: 0;
     font-family: Helvetica, Arial, Georgia, Tahoma;
 }
-
-body {
-    background: midnightblue;
-    color: white; /* Default text color */
+body{
+    background:midnightblue;
 }
-
 nav {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    
     padding: 20px;
+    height: 20px;
 }
-
-.dark-mode {
+.dark-mode  {
     background-color: black; /* Dark background */
+    color: white;
 }
-
 #themeToggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 30px;
-    color: #9c0e9c; 
+    top: 10px; 
+    right: 10px; 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    z-index: 1000; 
 }
 
 .search-bar {
@@ -34,12 +33,15 @@ nav {
     display: flex; 
     align-items: center; 
     justify-content: center; 
+    flex: 1; 
 }
 
 .search-bar input {
     padding: 10px; 
     margin-right: 10px; 
     width: 400px; 
+    height: 20px; 
+    font-size: 16px; 
     border: 1px solid #9c0e9c; 
     border-radius: 10px; 
     outline: none; 
@@ -63,11 +65,30 @@ nav {
 .search-bar button:hover {
     background-color: #5a5a5a; 
 }
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #9c0e9c; 
+    padding-left: 30px;
+}
 
+/* Dark Mode Icon Change */
+body.dark-mode #themeToggle i {
+    content: "\f185"; 
+}
+
+/* Light Mode Icon Change */
+body #themeToggle i {
+    content: "\f186"; /
+}
 .container {
+    padding-top:0px ;
     max-width: 1600px; 
     margin: 20px auto;
     padding: 15px; 
+    
 }
 
 .books-list {
@@ -88,26 +109,68 @@ nav {
 
 .book-item:hover {
     transform: scale(1.05); 
+    background-color: (1%, 1%, 0%, 4%);
 }
+
 
 .book-title {
-    font-size: 22px; 
+    font-size: 1.5em; 
     margin-bottom: 10px; 
     color: black; 
-    font-weight: bold;
+    font-weight: bolder;
+    font-style:normal;
+    font-size: 22px;
 }
 
-.book-authors, .book-description {
-    font-size: 15px; 
+.book-authors {
+    font-size: 1em; 
     color: black; 
     margin: 5px 0; 
+    font-size: 15px;
+    font-family: fantasy;
+}
+.book-description{
+    font-size: 15px; 
+    margin-bottom: 10px; 
+    color: black; 
 }
 
 .book-cover {
     width: 100%; 
     height: auto; 
     border-radius: 5px; 
-    max-width: 300px; /* Keep max-width for uniformity */
+}
+.book-rating {
+    font-size: 30px; 
+    color: gold; 
+}
+
+.book-rating span {
+    margin-right: 2px; 
+}
+.show-more {
+    background-color: transparent;
+    border: none;
+    color: blue; /* or your preferred color */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.show-more:hover {
+    text-decoration: none;
+    color: darkblue; /* Change color on hover */
+}
+.book-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.book-cover {
+    max-width: 300px;
+    margin-bottom: 10px;
 }
 
 .show-more {
@@ -121,8 +184,19 @@ nav {
 .show-more:hover {
     color: darkblue;
 }
+/* Like count style */
+.like-count {
+    font-size: 1em; /* Font size */
+    color: #666; /* Gray color */
+    margin-left: 10px; /* Space between button and count */
+}
 
-.like-button {
+/* Flex container for like button and count */
+.like-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+.like-button{
     padding: 5px 5px;
     height: 24px; 
     background-color: #9c0e9c; 
@@ -132,16 +206,9 @@ nav {
     font-size: 12px;
     border-radius: 5px;
 }
-
-.like-count {
-    font-size: 1em; 
-    color: #666; 
-    margin-left: 10px; 
-}
-
 footer {
     color: white; 
     padding: 40px 20px; 
     text-align: center; 
-    font-size: 20px;
+   font-size: 20px;
 }
