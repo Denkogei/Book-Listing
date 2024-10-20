@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
+    const notFoundMessage = document.querySelector('.not-found-message');
     // Search functionality
     searchButton.addEventListener('click', () => {
         const searchTerm = searchInput.value.toLowerCase();
@@ -81,6 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
             book.authors.some(author => author.toLowerCase().includes(searchTerm))
         );
         displayBooks(filteredBooks);
+
+        if (filteredBooks.length > 0) {
+            notFoundMessage.style.display = 'none'; // Hide the not found message
+            displayBooks(filteredBooks);
+        } else {
+            notFoundMessage.style.display = 'block'; // Show the not found message
+            booksList.innerHTML = ''; // Clear the book list
+        }
     });
 
     searchInput.addEventListener('keypress', (event) => {
@@ -91,6 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 book.authors.some(author => author.toLowerCase().includes(searchTerm))
             );
             displayBooks(filteredBooks);
+
+            if (filteredBooks.length > 0) {
+                notFoundMessage.style.display = 'none'; // Hide the not found message
+                displayBooks(filteredBooks);
+            } else {
+                notFoundMessage.style.display = 'block'; // Show the not found message
+                booksList.innerHTML = ''; // Clear the book list
+            }
         }
     });
 
