@@ -6,6 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     let allBooks = [];
 
+    // Fetching data from the JSON file
+    fetch('https://denkogei.github.io/Book-Listing/db.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Data received:", data); // Log the data for debugging
+            allBooks = Array.isArray(data) ? data : data.books; 
+            displayBooks(allBooks);
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+
     function displayBooks(books) {
         booksList.innerHTML = ''; // Clear existing books
         if (!Array.isArray(books)) {
@@ -55,24 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // Fetching data from the JSON file
-    fetch('https://denkogei.github.io/Book-Listing/db.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log("Data received:", data); // Log the data for debugging
-            // Adjust this based on your JSON structure
-            allBooks = Array.isArray(data) ? data : data.books; 
-            displayBooks(allBooks);
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
 
     // Search functionality
     searchButton.addEventListener('click', () => {
