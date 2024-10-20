@@ -15,41 +15,6 @@ nav {
     padding: 20px;
     height: 20px;
 }
-nav {
-    display: flex;
-    justify-content: center; /* Center nav content */
-    align-items: center; 
-    padding: 20px;
-}
-
-.search-bar {
-    margin-top: 100px; /* Adjust margin for vertical spacing */
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    width: 100%; /* Full width for centering */
-}
-
-.search-bar input {
-    padding: 10px; 
-    margin-right: 10px; 
-    width: 400px; /* Set a fixed width */
-    border: 1px solid #9c0e9c; 
-    border-radius: 10px; 
-    outline: none; 
-}
-
-.search-bar button {
-    padding: 5px 10px;
-    height: 40px; 
-    background-color: #9c0e9c; 
-    color: whitesmoke; 
-    border: none; 
-    cursor: pointer; 
-    font-size: 18px;
-    border-radius: 10px;
-}
-
 .dark-mode  {
     background-color: black; /* Dark background */
     color: white;
