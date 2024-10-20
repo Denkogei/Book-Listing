@@ -72,43 +72,46 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-    const notFoundMessage = document.querySelector('.not-found-message');
+    
     // Search functionality
-    searchButton.addEventListener('click', () => {
+    // Select the not found message element
+const notFoundMessage = document.querySelector('.not-found-message');
+
+// Search functionality
+searchButton.addEventListener('click', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const filteredBooks = allBooks.filter(book =>
+        book.title.toLowerCase().includes(searchTerm) ||
+        book.authors.some(author => author.toLowerCase().includes(searchTerm))
+    );
+
+    if (filteredBooks.length > 0) {
+        notFoundMessage.style.display = 'none'; // Hide the not found message
+        displayBooks(filteredBooks); // Display the filtered books
+    } else {
+        notFoundMessage.style.display = 'block'; // Show the not found message
+        booksList.innerHTML = ''; // Clear the book list
+    }
+});
+
+searchInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
         const searchTerm = searchInput.value.toLowerCase();
         const filteredBooks = allBooks.filter(book =>
             book.title.toLowerCase().includes(searchTerm) ||
             book.authors.some(author => author.toLowerCase().includes(searchTerm))
         );
-        displayBooks(filteredBooks);
 
         if (filteredBooks.length > 0) {
             notFoundMessage.style.display = 'none'; // Hide the not found message
-            displayBooks(filteredBooks);
+            displayBooks(filteredBooks); // Display the filtered books
         } else {
             notFoundMessage.style.display = 'block'; // Show the not found message
             booksList.innerHTML = ''; // Clear the book list
         }
-    });
+    }
+});
 
-    searchInput.addEventListener('keypress', (event) => {
-        if (event.key === 'Enter') {
-            const searchTerm = searchInput.value.toLowerCase();
-            const filteredBooks = allBooks.filter(book =>
-                book.title.toLowerCase().includes(searchTerm) ||
-                book.authors.some(author => author.toLowerCase().includes(searchTerm))
-            );
-            displayBooks(filteredBooks);
-
-            if (filteredBooks.length > 0) {
-                notFoundMessage.style.display = 'none'; // Hide the not found message
-                displayBooks(filteredBooks);
-            } else {
-                notFoundMessage.style.display = 'block'; // Show the not found message
-                booksList.innerHTML = ''; // Clear the book list
-            }
-        }
-    });
 
     // Theme toggle functionality
     const savedTheme = localStorage.getItem('theme');
