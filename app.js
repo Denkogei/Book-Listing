@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let allBooks = [];
 
     // Fetching data from the API
-    fetch('http://localhost:3000/books')
+    fetch('https://denkogei.github.io/Book-Listing/db.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
