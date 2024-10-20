@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchButton = document.getElementById('searchButton');
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
+    const notFoundMessage = document.querySelector('.not-found-message');
     let allBooks = [];
 
     // Fetching data from the JSON file
@@ -21,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
+            notFoundMessage.textContent = 'Failed to load books. Please try again later.';
+            notFoundMessage.style.display = 'block';
         });
 
     function displayBooks(books) {
@@ -34,11 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const bookItem = document.createElement('div');
             bookItem.classList.add('book-item');
 
-            // Load likes from local storage or use the default value
             const storedLikes = localStorage.getItem(`likes_${book.id}`);
             book.likes = storedLikes ? parseInt(storedLikes) : (book.likes || 0);
 
-            // Add content to the book item
             bookItem.innerHTML = `
                 <img src="${book.image || 'default.jpg'}" alt="Book Cover" class="book-cover" />
                 <h2 class="book-title">${book.title}</h2>
@@ -53,10 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="like-count">${book.likes} Likes</span>
             `;
 
-            // Append the book item to the books list
             booksList.appendChild(bookItem);
 
-            // Event listeners for show more and like button
             const button = bookItem.querySelector('.show-more');
             button.addEventListener('click', () => {
                 const detailsElement = bookItem.querySelector('.book-details');
@@ -71,47 +70,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem(`likes_${book.id}`, book.likes);
             });
         });
+
+        // Handle "No books found" message
+        if (books.length === 0) {
+            notFoundMessage.style.display = 'block'; // Show the not found message
+        } else {
+            notFoundMessage.style.display = 'none'; // Hide the not found message
+        }
     }
-    
+
     // Search functionality
-    // Select the not found message element
-const notFoundMessage = document.querySelector('.not-found-message');
-
-// Search functionality
-searchButton.addEventListener('click', () => {
-    const searchTerm = searchInput.value.toLowerCase();
-    const filteredBooks = allBooks.filter(book =>
-        book.title.toLowerCase().includes(searchTerm) ||
-        book.authors.some(author => author.toLowerCase().includes(searchTerm))
-    );
-
-    if (filteredBooks.length > 0) {
-        notFoundMessage.style.display = 'none'; // Hide the not found message
-        displayBooks(filteredBooks); // Display the filtered books
-    } else {
-        notFoundMessage.style.display = 'block'; // Show the not found message
-        booksList.innerHTML = ''; // Clear the book list
-    }
-});
-
-searchInput.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
+    const handleSearch = () => {
         const searchTerm = searchInput.value.toLowerCase();
         const filteredBooks = allBooks.filter(book =>
             book.title.toLowerCase().includes(searchTerm) ||
             book.authors.some(author => author.toLowerCase().includes(searchTerm))
         );
 
-        if (filteredBooks.length > 0) {
-            notFoundMessage.style.display = 'none'; // Hide the not found message
-            displayBooks(filteredBooks); // Display the filtered books
-        } else {
-            notFoundMessage.style.display = 'block'; // Show the not found message
-            booksList.innerHTML = ''; // Clear the book list
-        }
-    }
-});
+        displayBooks(filteredBooks);
+    };
 
+    searchButton.addEventListener('click', handleSearch);
+    searchInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    });
 
     // Theme toggle functionality
     const savedTheme = localStorage.getItem('theme');
