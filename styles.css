@@ -166,6 +166,16 @@ footer {
 
     
     @media screen and (max-width: 600px) {
+        .books-container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center align cards */
+        }
+        .book-card {
+            width: 90% !important; /* Adjusts width to fit screen */
+            max-width: 350px; /* Prevents it from getting too wide */
+            margin-bottom: 15px; /* Space between cards */
+        }
         .search-bar {
             margin-top: 5px !important; /* Reduce space above */
             margin-bottom: 5px !important; /* Reduce space below */
