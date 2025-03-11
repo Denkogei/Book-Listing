@@ -1,207 +1,364 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    bottom: 0;
     font-family: Helvetica, Arial, Georgia, Tahoma;
 }
-
-body {
-    background: midnightblue;
-    color: white;
+body{
+    background:midnightblue;
 }
-
-/* Navigation */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
+    align-items: center; 
+    
     padding: 20px;
-    align-items: center;
+    height: 20px;
+}
+.dark-mode  {
+    background-color: black; /* Dark background */
+    color: white;
+}
+#themeToggle {
+    top: 10px; 
+    right: 10px; 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    z-index: 1000; 
 }
 
-/* Search Bar */
 .search-bar {
-    margin-top: 10px; /* Reduce space above */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
+    margin-top: 180px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex: 1; 
 }
-
 
 .search-bar input {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #9c0e9c;
-    border-radius: 10px;
-    outline: none;
+    padding: 10px; 
+    margin-right: 10px; 
+    width: 400px; 
+    height: 20px; 
+    font-size: 16px; 
+    border: 1px solid #9c0e9c; 
+    border-radius: 10px; 
+    outline: none; 
+}
+
+.search-bar input:focus {
+    border-color: midnightblue; 
 }
 
 .search-bar button {
-    padding: 8px 15px;
-    background-color: #9c0e9c;
-    color: whitesmoke;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+    padding: 5px 10px;
+    height: 40px; 
+    background-color: #9c0e9c; 
+    color: whitesmoke; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 18px;
     border-radius: 10px;
-    margin-left: 10px;
 }
 
 .search-bar button:hover {
-    background-color: #5a5a5a;
+    background-color: #5a5a5a; 
 }
-
-/* Theme Toggle Button */
 #themeToggle {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px;
-    color: #9c0e9c;
-    margin-left: 15px;
+    font-size: 30px;
+    color: #9c0e9c; 
+    padding-left: 30px;
 }
 
-/* Container */
+/* Dark Mode Icon Change */
+body.dark-mode #themeToggle i {
+    content: "\f185"; 
+}
+
+/* Light Mode Icon Change */
+body #themeToggle i {
+    content: "\f186"; /
+}
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px; /* Remove extra padding */
+    padding-top:0px ;
+    max-width: 1600px; 
+    margin: 20px auto;
+    padding: 15px; 
+    
 }
 
-/* Books List */
 .books-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 10px;
-    margin-top: 0; /* Remove unnecessary space */
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
+    gap: 20px; 
 }
 
-/* Book Items */
 .book-item {
-    background-color: #fff;
-    color: black;
-    border: 1px solid #9c0e9c;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    background-color: #FFFFFF; 
+    border: 1px solid #9c0e9c; 
+    border-radius: 10px; 
+    padding: 15px; 
+    text-align: center; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
 }
 
 .book-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); 
+    background-color: (1%, 1%, 0%, 4%);
 }
 
+
 .book-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+    color: black; 
+    font-weight: bolder;
+    font-style:normal;
+    font-size: 22px;
 }
 
 .book-authors {
-    font-size: 14px;
+    font-size: 1em; 
+    color: black; 
+    margin: 5px 0; 
+    font-size: 15px;
     font-family: fantasy;
 }
-
-.book-description {
-    font-size: 14px;
-    margin-bottom: 10px;
+.book-description{
+    font-size: 15px; 
+    margin-bottom: 10px; 
+    color: black; 
 }
 
 .book-cover {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
 }
-
 .book-rating {
-    font-size: 20px;
-    color: gold;
+    font-size: 30px; 
+    color: gold; 
 }
 
-/* Like Button */
+.book-rating span {
+    margin-right: 2px; 
+}
+.show-more {
+    background-color: transparent;
+    border: none;
+    color: blue; /* or your preferred color */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.show-more:hover {
+    text-decoration: none;
+    color: darkblue; /* Change color on hover */
+}
+.book-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.book-cover {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.show-more {
+    background-color: transparent;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.show-more:hover {
+    color: darkblue;
+}
+/* Like count style */
+.like-count {
+    font-size: 1em; /* Font size */
+    color: #666; /* Gray color */
+    margin-left: 10px; /* Space between button and count */
+}
+
+/* Flex container for like button and count */
 .like-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Center items vertically */
 }
-
-.like-button {
-    padding: 5px 10px;
-    background-color: #9c0e9c;
-    color: whitesmoke;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
+.like-button{
+    padding: 5px 5px;
+    height: 24px; 
+    background-color: #9c0e9c; 
+    color: whitesmoke; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 12px;
     border-radius: 5px;
 }
-
-.like-count {
-    font-size: 14px;
-    color: #666;
-    margin-left: 10px;
-}
-
-/* Footer */
 footer {
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
+    color: white; 
+    padding: 40px 20px; 
+    text-align: center; 
+   font-size: 20px;
 }
-
-/* No Books Found Message */
 .not-found-message {
-    display: none;
+    display: none; /* Hidden by default */
     color: red;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Add space above the message */
+}
+/* Apply spacing to search bar on all screen sizes */
+.search-bar {
+    display: flex;
+    flex-direction: row; /* Keep input and button aligned horizontally */
+    gap: 8px; /* Add spacing between input and button */
+    align-items: center; /* Align elements properly */
 }
 
-    
-    @media screen and (max-width: 600px) {
-        .books-container {
-            display: flex;
-            flex-direction: column; /* Stack items vertically */
-            align-items: center; /* Center align cards */
-        }
-        .book-card {
-            width: 90% !important; /* Adjusts width to fit screen */
-            max-width: 350px; /* Prevents it from getting too wide */
-            margin-bottom: 15px; /* Space between cards */
-        }
-        .search-bar {
-            margin-top: 5px !important; /* Reduce space above */
-            margin-bottom: 5px !important; /* Reduce space below */
-            padding: 5px; /* Adds space inside */
-        }
-    
-        .search-bar input {
-            width: 90% !important;
-            max-width: 350px;
-            margin: 0 auto;
-        }
-    
-        h2#book-text {
-            font-size: 16px !important;
-            white-space: nowrap;
-            text-align: center;
-            margin-top: 0px !important; /* Reduce top margin */
-            padding-top: 2px !important; /* Reduce padding above */
-            padding-bottom: 5px !important; /* Keep small bottom padding */
-            line-height: 1.2;
-        }
-    
-        /* Remove unnecessary spacing from the parent */
-        .container, .parent-div {
-            padding: 0px !important;
-            margin: 0px !important;
-        }
+/* Ensure input and button are well-spaced on all devices */
+.search-bar input {
+    flex-grow: 1; /* Allow input to take available space */
+    max-width: 350px;
+}
+
+.search-bar button {
+    padding: 8px 12px; /* Ensure button has enough touch space */
+}
+
+/* Small Tablets (600px) */
+@media screen and (max-width: 600px) {
+    .books-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align cards */
+    }
+    .book-card {
+        width: 90% !important; /* Adjusts width to fit screen */
+        max-width: 350px; /* Prevents it from getting too wide */
+        margin-bottom: 15px; /* Space between cards */
+    }
+    .search-bar {
+        margin-top: 5px !important; /* Reduce space above */
+        margin-bottom: 5px !important; /* Reduce space below */
+        padding: 5px; /* Adds space inside */
     }
 
+    .search-bar input {
+        width: 90% !important;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    h2#book-text {
+        font-size: 16px !important;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: 0px !important; /* Reduce top margin */
+        padding-top: 2px !important; /* Reduce padding above */
+        padding-bottom: 5px !important; /* Keep small bottom padding */
+        line-height: 1.2;
+    }
+
+    /* Remove unnecessary spacing from the parent */
+    .container, .parent-div {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+/* Medium Phones (768px) */
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .search-bar {
+        width: 90%;
+        max-width: 400px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .search-bar input {
+        flex: 1;
+        min-width: 120px;
+        max-width: 220px;
+        height: 32px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .search-bar button, .dark-mode-btn {
+        width: 45px;
+        height: 32px;
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    /* Make available books text smaller and force single line */
+    .available-books {
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Large Tablets (1024px) */
+@media screen and (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .search-bar {
+        width: 85%;
+        max-width: 500px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .search-bar input {
+        flex: 1;
+        min-width: 150px;
+        max-width: 250px;
+        height: 36px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .search-bar button, .dark-mode-btn {
+        width: 50px;
+        height: 36px;
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    /* Make available books text smaller and force single line */
+    .available-books {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+}
